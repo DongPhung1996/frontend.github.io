@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    text-align: justify;
+    line-height: 28px;
+}
+
+/*Css header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 25px 70px;
+}
+
+header .header__logo span {
+    font-size: 30px;
+}
+
+header .header__menu ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .header__menu ul li {
+    display: inline;
+    padding: 5px 45px;
+}
+
+header .header__menu ul li:last-child{
+    padding-right:  0px;
+}
+
+header .header__menu ul li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #626262;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/*Css header*/
+
+.firs-post,
+.lifestyle {
+    padding: 0 70px;
+}
+
+/*Css first post*/
+
+.firs-post img {
+    max-width: 100%;
+}
+
+.firs-post .content {
+    height: auto;
+    margin: 100px 80px;
+}
+
+.firs-post .content p.firs-post__photodiary, p.firs-post__comment {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+
+.firs-post .content h2 {
+    margin: 25px 0;
+    font-family: "Myriad Pro";  
+    color: #626262;
+}
+
+.firs-post .content p.firs-post__comment {
+    margin-top: 55px;
+}
+
+/*Css first post*/
+
+/*Css lifestyle post*/
+
+.lifestyle .row {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 100px 80px;
+}
+
+.lifestyle .row .col img, 
+.lifestyle .row .col .content {
+    max-width: 90%;
+}
+
+.lifestyle .row .col .content .content__lifstyle {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    margin: 25px 0
+}
+
+.lifestyle .row .col .content h2 {
+    font-family: "Myriad Pro";  
+    color: #626262;
+    margin-bottom: 25px;
+}
+
+/*Css lifestyle post*/
+
+/*Css sign up*/
+.sign_up {
+    max-width: 100%;
+    height: 286px;
+    background: #f0f0f0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.sign_up h2 {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.sign_up input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-right: 100px;
+    background: #f0f0f0;
+    margin: 0 auto;
+}
+
+.sign_up input:focus {
+    outline: none;
+}
+
+.sign_up div {
+    display: inline-block;
+    position: relative;
+}
+
+.sign_up img.icon {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+/*Css sign up*/
+
+/*Css load more*/
+.load_more {
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+    background-color: #ffffff;
+    display: block;
+    margin: 170px auto;
+    cursor: pointer;
+}
+/*Css load more*/
+
+/*Css footer*/
+
+footer {
+    height: 100px;
+    max-width: 100%;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+footer ul li:first-child {
+    padding-left: 80px;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: #626262;
+}
+
+footer .follow {
+    padding-right: 70px;
+}
+
+footer .icon_social {
+    padding: 0 10px;
+}
+
+/*Css footer*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 36px;
+    }
+    
+    .lifestyle .row {
+        display: initial;
+    }
+    .lifestyle .row .col {
+        margin: 80px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lifestyle .row .col .content {
+        max-width: 80%;
+    }
+} 
+
